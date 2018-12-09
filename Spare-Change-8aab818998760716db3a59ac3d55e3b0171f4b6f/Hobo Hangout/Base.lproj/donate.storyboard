@@ -156,6 +156,9 @@
                                     <constraint firstAttribute="height" constant="80" id="bl7-Ya-Q7s"/>
                                     <constraint firstAttribute="width" constant="80" id="rxk-XI-bbM"/>
                                 </constraints>
+                                <connections>
+                                    <segue destination="fjQ-Pm-vso" kind="show" id="ZJb-kn-EJl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAr-0g-kyn">
                                 <rect key="frame" x="77" y="345" width="80" height="80"/>
@@ -1813,6 +1816,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--prayer-->
+        <scene sceneID="0zO-lb-8Tz">
+            <objects>
+                <viewController id="fjQ-Pm-vso" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z3s-Cw-S8S"/>
+                        <viewControllerLayoutGuide type="bottom" id="knB-zT-Ai9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dOF-8o-44E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prayer" translatesAutoresizingMaskIntoConstraints="NO" id="8tr-4B-wPd">
+                                <rect key="frame" x="97" y="366" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="N8n-5q-7rG"/>
+                                    <constraint firstAttribute="width" constant="180" id="TbS-8R-wFO"/>
+                                    <constraint firstAttribute="height" constant="180" id="ZxZ-xQ-pYI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="dsR-TR-NWe"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iP-A0-A7h">
+                                <rect key="frame" x="16" y="7" width="343" height="351"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lord God, 
+You came to give honour to the least, those forgotten, misunderstood and undervalued. You came to give a warm welcome to the lost, those who are orphaned, abandoned and destitute. Help us to be your ears to listen to their cries. Help us to be your voice speaking out love and acceptance. Help us to be your feet walking beside those in need. Help us to be your hands to clothe, feed and shelter them. You came for the least, the lost and last of this world. Amen.</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8iP-A0-A7h" secondAttribute="trailing" constant="16" id="1Nc-7Z-3aW"/>
+                            <constraint firstItem="8tr-4B-wPd" firstAttribute="centerX" secondItem="dOF-8o-44E" secondAttribute="centerX" id="KLh-f1-gXC"/>
+                            <constraint firstItem="8tr-4B-wPd" firstAttribute="top" secondItem="8iP-A0-A7h" secondAttribute="bottom" constant="8" symbolic="YES" id="dYm-Jw-J57"/>
+                            <constraint firstItem="8iP-A0-A7h" firstAttribute="top" secondItem="Z3s-Cw-S8S" secondAttribute="bottom" constant="7" id="fvN-Ti-bou"/>
+                            <constraint firstItem="knB-zT-Ai9" firstAttribute="top" secondItem="8tr-4B-wPd" secondAttribute="bottom" constant="8" symbolic="YES" id="gvy-Np-Hbe"/>
+                            <constraint firstItem="8iP-A0-A7h" firstAttribute="leading" secondItem="dOF-8o-44E" secondAttribute="leading" constant="16" id="oHZ-BR-3xi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="prayer" id="YiE-Xx-rIT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12a-Fq-2W2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-780" y="767.76611694152928"/>
         </scene>
         <!--who we are-->
         <scene sceneID="laF-ik-2gd">
